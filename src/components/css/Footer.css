@@ -1,0 +1,22 @@
+.footer {
+    background-color: rgba(221, 204, 157, 0.623);
+    color: black;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    flex-direction: row;
+  }
+
+.footerbox {
+    width: 50%;
+    /* border: 3px solid red; */
+    flex-direction: row;
+    
+}
+
+.rtl {
+    direction: rtl;
+}

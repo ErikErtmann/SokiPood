@@ -1,0 +1,29 @@
+.flexbox-container-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(218, 217, 167);
+    border:3px solid rgb(0, 0, 0);
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.brand{
+    font-size: 27px;
+    letter-spacing: 0.5vw;
+    max-width: 10%;
+    min-width: 10%;
+    /* border:1px solid rgb(192, 148, 105); */
+}
+
+.lingid{
+    font-size: 27px;
+    flex-basis: 10%;
+    border:3px solid rgb(192, 148, 105);
+}
+
+.caption{
+    flex-basis: 10%;
+    border:3px solid rgb(192, 148, 105);
+}
+
