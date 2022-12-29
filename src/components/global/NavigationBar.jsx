@@ -1,18 +1,18 @@
-import { Navbar, Nav, NavbarBrand } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import "../css/NavigationBar.css";
 
 function NavigationBar() {
     return (
       <div>
         <div className="flexbox-container-navbar">
-         {/* <NavbarBrand className='brand'>Sossuk</NavbarBrand> */}
           <Navbar bg="transparent" expand="lg">
            <div className='lingid'>
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav.Link href=".."className='caption'>Esileht</Nav.Link>
-                <Nav.Link href="tooted"className='caption'>Tooted</Nav.Link>
-                <Nav.Link href="resume"className='caption'>Kontakt</Nav.Link>
-                <Nav.Link href="ostukorv"className='caption'>Ostukorv(hiljem logo)</Nav.Link>
+                <Link to="/"className='caption'>Esileht</Link>
+                <Link to="/tooted"className='caption'>Tooted</Link>
+                <Link to="/kontakt"className='caption'>Kontakt</Link>
+                <Link to="/ostukorv"className='caption'>Ostukorv(hiljem logo)</Link>
             </Navbar.Collapse>
            </div>
           </Navbar>

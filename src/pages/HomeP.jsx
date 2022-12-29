@@ -2,45 +2,12 @@ import "../components/css/HomeP.css";
 
 function HomeP() {
     return (
-    <div>
-      <div className='flexbox-container'>
-        <div className='boxes'>
-          <div className='box'>
-            <img src={require("../images/sokk.jpg")} alt=""/>
-            <h1 class="box-text">Mõnnad helesinised sokid</h1>
-            <p> Valmistatud ...... </p>
-            <h3 class="box-text">32€</h3>
-            <br/>
-            <button className="ostukorvinupp">Lisa ostukorvi</button>
-          </div>
-          <div className='box'>
-            <img src={require("../images/sokk.jpg")} alt=""/>
-            <h1 class="box-text">Mõnnad helesinised sokid</h1>
-            <p> Puuvill 100% </p>
-            <h3 class="box-text">32€</h3>
-            <br/>
-            <div className="nupud">
-                <button className="ostukorvinupp">Lisa ostukorvi</button>
-                <button className="ostukorvinupp">Vaata lisainfot</button>
-            </div>
-          </div>
-          <div className='box'>
-          <img src={require("../images/sokk.jpg")} alt=""/>
-            <div class="box-text">Toode 3</div>
-          </div>
-          <div className='box'>
-          <img src={require("../images/sokk.jpg")} alt=""/>
-            <div class="box-text">Toode 4</div>
-          </div>
-          <div className='box'>
-          <img src={require("../images/sokk.jpg")} alt=""/>
-            <div class="box-text">Toode 5</div>
-          </div>
-          <div className='box'>
-          <img src={require("../images/sokk.jpg")} alt=""/>
-            <div class="box-text">Toode 6</div>
-          </div>
-        </div>
+    <div className="flexbox-container-home">
+      <div className="pildibox">
+        <img className="logo" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/322601133_566665614907776_7654652537309470218_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=tq398LzNiCwAX9Df9kT&_nc_ht=scontent-arn2-1.xx&oh=03_AdQRLSibMf3MlBlE6OQ7fcXfZIaMgYbRM8xxPhyzmBmEVw&oe=63D52D68" alt=""/>
+        <div className="tervitus">
+        <h1>Tere tulemast ..... lehele </h1>
+      </div>
       </div>
     </div>  );
 }

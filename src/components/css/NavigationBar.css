@@ -1,11 +1,15 @@
 .flexbox-container-navbar{
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(218, 217, 167);
-    border:1px solid rgb(0, 0, 0);
+    background-color: rgba(248, 245, 227, 0.925);
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    border-radius: 0.35vw;
+    padding-bottom: 1vw;
 }
 
 /* .brand{
@@ -17,15 +21,17 @@
 } */
 
 .lingid{
-    font-size: 27px;
-    border:3px solid rgb(204, 102, 0);
+    display: flex;
+    flex-wrap: wrap;
+    /* border:3px solid rgb(204, 102, 0); */
 }
 
 .caption{
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-    flex-basis: 30%;
-    border:3px solid rgb(192, 148, 105);
+    /* border:3px solid rgb(192, 148, 105); */
+    margin: 3vw;
+    font-size: 27px;
+    text-decoration: none;
+    color: black;
 }
+
 
