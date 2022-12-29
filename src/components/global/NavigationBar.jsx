@@ -5,13 +5,14 @@ function NavigationBar() {
     return (
       <div>
         <div className="flexbox-container-navbar">
-         <NavbarBrand className='brand'>Sossuk</NavbarBrand>
+         {/* <NavbarBrand className='brand'>Sossuk</NavbarBrand> */}
           <Navbar bg="transparent" expand="lg">
            <div className='lingid'>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav.Link href=".."className='caption'>Esileht</Nav.Link>
                 <Nav.Link href="tooted"className='caption'>Tooted</Nav.Link>
                 <Nav.Link href="resume"className='caption'>Kontakt</Nav.Link>
+                <Nav.Link href="ostukorv"className='caption'>Ostukorv(hiljem logo)</Nav.Link>
             </Navbar.Collapse>
            </div>
           </Navbar>

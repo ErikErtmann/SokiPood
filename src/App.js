@@ -1,5 +1,5 @@
 import './App.css';
-import { Navigate, Route, Routes } from 'react-router-dom'; 
+// import { Navigate, Route, Routes } from 'react-router-dom'; 
 import Particle from './components/global/Particle';
 import Footer from './components/global/Footer';
 import HomeP from "./pages/HomeP";
@@ -9,9 +9,9 @@ function App() {
   return (
     <div>
       <NavigationBar />
-      <Particle/>
       <HomeP />
       <Footer/>
+      <Particle/>
     </div>
   );
 }
