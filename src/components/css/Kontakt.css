@@ -1,0 +1,13 @@
+.flexbox-container-kontakt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    height: 25vw;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    /* border: 3px solid rgb(0, 0, 0); */
+    background-color: rgba(252, 252, 252, 0.63);
+    align-items: center;
+    padding-top: 3vw;
+  }

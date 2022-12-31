@@ -1,4 +1,6 @@
 import "../components/css/Tooted.css";
+import { Link } from "react-router-dom"
+
 
 function Tooted() {
     return (
@@ -21,7 +23,9 @@ function Tooted() {
             <br/>
             <div className="nupud">
                 <button className="ostukorvinupp">Lisa ostukorvi</button>
-                <button className="ostukorvinupp">Vaata lisainfot</button>
+                <Link to ={"/tooted/toode/"}>
+                  <button className="ostukorvinupp">Vaata lisainfot</button>
+                </Link>
             </div>
           </div>
           <div className='box'>

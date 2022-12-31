@@ -13,6 +13,7 @@ function NavigationBar() {
                 <Link to="/tooted"className='caption'>Tooted</Link>
                 <Link to="/kontakt"className='caption'>Kontakt</Link>
                 <Link to="/ostukorv"className='caption'>Ostukorv(hiljem logo)</Link>
+                
             </Navbar.Collapse>
            </div>
           </Navbar>
