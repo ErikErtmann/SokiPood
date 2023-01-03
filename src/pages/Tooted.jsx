@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 
 
 function Tooted() {
+  
+
     return (
     <div>
       <div className='flexbox-container'>
@@ -28,22 +30,26 @@ function Tooted() {
                 </Link>
             </div>
           </div>
+
           <div className='box'>
-          <img src={require("../images/sokk.jpg")} alt=""/>
-            <div class="box-text">Toode 3</div>
+            <img src={require("../images/sokk.jpg")} alt=""/>
+            <h1 class="box-text">Toode 3</h1>
+            <p> Puuvill 100% </p>
+            <h3 class="box-text">32€</h3>
+            <br/>
+            <div className="nupud">
+                <button className="ostukorvinupp">Lisa ostukorvi</button>
+                <Link to ={"/tooted/toode/"}>
+                  <button className="ostukorvinupp">Vaata lisainfot</button>
+                </Link>
+            </div>
           </div>
+          
           <div className='box'>
           <img src={require("../images/sokk.jpg")} alt=""/>
             <div class="box-text">Toode 4</div>
           </div>
-          <div className='box'>
-          <img src={require("../images/sokk.jpg")} alt=""/>
-            <div class="box-text">Toode 5</div>
-          </div>
-          <div className='box'>
-          <img src={require("../images/sokk.jpg")} alt=""/>
-            <div class="box-text">Toode 6</div>
-          </div>
+
         </div>
       </div>
     </div>  
