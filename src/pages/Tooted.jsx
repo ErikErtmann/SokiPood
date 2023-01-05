@@ -1,58 +1,44 @@
 import "../components/css/Tooted.css";
 import { Link } from "react-router-dom"
+import { useState } from "react";
+import ProductList from "../tooted.json";
+import { useRef } from "react";
 
 
 function Tooted() {
+
+  const [test, updateTest] = useState( ProductList );
+
   
 
+  const kustuta = (number) => {
+    test.splice(number,1);
+    updateTest(test.slice());
+  }
+  
     return (
-    <div>
-      <div className='flexbox-container'>
-        <div className='boxes'>
+    <div className='flexbox-container'>
+      <div className='boxes'>
+      {test.map((asi,index) =>
+      <div key={index}>
+        
           <div className='box'>
-            <img src={require("../images/sokk.jpg")} alt=""/>
-            <h1 class="box-text">Mõnnad helesinised sokid</h1>
-            <p> Valmistatud ...... </p>
-            <h3 class="box-text">32€</h3>
-            <br/>
-            <button className="ostukorvinupp">Lisa ostukorvi</button>
-          </div>
-          <div className='box'>
-            <img src={require("../images/sokk.jpg")} alt=""/>
-            <h1 class="box-text">Mõnnad helesinised sokid</h1>
-            <p> Puuvill 100% </p>
-            <h3 class="box-text">32€</h3>
+            <img src={asi.pilt} alt="Siin on pilt"/>
+            <h1 class="box-text"> {asi.toode} </h1>
+            <p> {asi.kirjeldus} </p>
+            <h3 class="box-text"> {asi.hind} </h3>
             <br/>
             <div className="nupud">
-                <button className="ostukorvinupp">Lisa ostukorvi</button>
-                <Link to ={"/tooted/toode/"}>
-                  <button className="ostukorvinupp">Vaata lisainfot</button>
-                </Link>
+              <button className="ostukorvinupp" onClick={() => kustuta(index)}>Kustuta</button>
+              <Link to ={"/tooted/toode/"}>
+                <button className="ostukorvinupp">Lisainfo</button>
+              </Link>
             </div>
           </div>
-
-          <div className='box'>
-            <img src={require("../images/sokk.jpg")} alt=""/>
-            <h1 class="box-text">Toode 3</h1>
-            <p> Puuvill 100% </p>
-            <h3 class="box-text">32€</h3>
-            <br/>
-            <div className="nupud">
-                <button className="ostukorvinupp">Lisa ostukorvi</button>
-                <Link to ={"/tooted/toode/"}>
-                  <button className="ostukorvinupp">Vaata lisainfot</button>
-                </Link>
-            </div>
-          </div>
-          
-          <div className='box'>
-          <img src={require("../images/sokk.jpg")} alt=""/>
-            <div class="box-text">Toode 4</div>
-          </div>
-
         </div>
+      )}
       </div>
-    </div>  
+    </div>
       );
 }
 
